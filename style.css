@@ -42,7 +42,7 @@ body *{
 #app{
     width: fit-content;
     margin: auto;
-    padding-top: 52px;
+    padding: 52px 0;
 }
 header{
     margin-bottom: 63px;
@@ -133,8 +133,9 @@ header{
 
 @media(min-width: 700px){
     #cards{
-        max-width: 670px;
+        max-width: 1100px;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
