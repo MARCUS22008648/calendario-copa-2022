@@ -2,7 +2,7 @@ function createGame(player1, hour, player2){
     return `
     <li>
         <img src="./assets/icon-${player1}.svg" alt="${player1}" />
-            <strong>${hour}</strong>
+        <strong>${hour}</strong>
         <img src="./assets/icon-${player2}.svg" alt="${player2}" />
     </li>
     `
@@ -22,16 +22,16 @@ function createCard(date, day, games){
     `
 }
 
-//Cartões de jogos da xopa do mundo (ordenados por data e hora)
+//Cartões de jogos da copa do mundo (ordenados por data e hora)
 document.querySelector('#cards').innerHTML = 
 
-    createCard('20/11', 'Domingo', createGame("qatar", "16:00", "ecuador")) +
+    createCard('20/11', 'Domingo', createGame("qatar", "0 - 2", "ecuador")) +
 
-    createCard('21/11', 'Segunda', createGame("england", "13:00", "iran") + createGame("senegal", "16:00", "netherlands") + 
-    createGame("usa", "19:00", "wales")) +
+    createCard('21/11', 'Segunda', createGame("england", "6 - 2", "iran") + createGame("senegal", "0 - 2", "netherlands") + 
+    createGame("usa", "1 - 1", "wales")) +
 
-    createCard('22/11', 'Terça', createGame("argentina", "10:00", "saudiArabia") + createGame("denmark", "13:00", "tunisia") + 
-    createGame("mexico", "16:00", "poland") + createGame("france", "19:00", "australia")) +
+    createCard('22/11', 'Terça', createGame("argentina", "1 - 2", "saudiArabia") + createGame("denmark", "0 - 0", "tunisia") + 
+    createGame("mexico", "0 - 0", "poland") + createGame("france", "4 - 1", "australia")) +
 
     createCard('23/11', 'Quarta', createGame("morocco", "10:00", "croatia") + createGame("germany", "13:00", "japan") + 
     createGame("spain", "16:00", "costaRica") + createGame("belgium", "19:00", "canada")) +

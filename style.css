@@ -42,7 +42,8 @@ body *{
 #app{
     width: fit-content;
     margin: auto;
-    padding: 52px 0;
+    padding-top: 52px;
+    padding-bottom: 20px;
 }
 header{
     margin-bottom: 63px;
@@ -116,10 +117,12 @@ header{
     transition: transform 0.3s; 
 }
 
+
 .card{
     opacity: 0;
     animation: appear 2s forwards;
 }
+
 
 @keyframes appear{
     0%{
